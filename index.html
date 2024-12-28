@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Penjelasan tentang HTML, CSS, dan JavaScript untuk web development"
+    />
+    <title>Pengertian HTML, CSS, dan JS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <span class="text-warning">Deru</span>DJ
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-semibold" href="#html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-semibold" href="#css">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-semibold" href="#js">JS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+      <!-- HTML Section -->
+      <section id="html" class="mb-5">
+        <h1 class="border-bottom border-warning pb-3 mb-4 display-4">
+          Apa Itu HTML?
+        </h1>
+        <p class="lead">
+          Pertama-tama kita harus tahu apa itu HTML, HTML adalah sebuah bahasa
+          markup yang biasanya digunakan untuk membuat sebuah halaman web. Nah,
+          siapa sih penciptanya? Penciptanya adalah Tim Barners Lee pada tahun
+          1991. Untuk saat ini versi terbarunya yaitu versi HTML5 yang dirilis
+          tahun 2014. HTML adalah kependekan dari Hypertext Markup Language. Nah
+          dari kata Markup berarti HTML bukanlah bahasa pemrograman. Jadi, clear
+          ya yang bilang bahwa HTML itu bahasa pemrograman berarti mereka salah
+          ya brok. Untuk lebih mudah ibaratkan saja HTML itu adalah kerangka
+          atau tulang dari manusia. Kenapa sih kita pakai HTML?
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Kelebihan HTML</h2>
+        <p>Kelebihan yang kita dapatkan saat menggunakan HTML antara lain:</p>
+        <ul class="list-group mb-4">
+          <li class="list-group-item bg-dark text-light border-warning">
+            Bersifat Open Source sehingga gratis untuk digunakan
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Mudah disambungkan dengan bahasa lain contohnya JavaScript dan PHP
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Bisa dijalankan oleh hampir semua browser
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Mudah dipelajari oleh web developer pemula
+          </li>
+        </ul>
+
+        <p>
+          Nah diatas itu adalah kelebihan dari HTML, tetapi bukan berarti tidak
+          ada kekurangan nya ya brok.
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Kekurangan HTML</h2>
+        <p>
+          Sebelumnya kita sudah membahas kelebihannya nih, nah sekarang kita
+          bahas kekurangannya ya. Apa aja sih kekurangannya:
+        </p>
+        <ul class="list-group mb-4">
+          <li class="list-group-item bg-dark text-light border-warning">
+            Hanya diimplementasikan pada web statis
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Tidak bisa menjalankan logika seperti pertambahan, pengurangan, dan
+            sebagainya
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Tidak bisa terhubung dengan database
+          </li>
+        </ul>
+
+        <p>
+          Nah itulah kelebihan dan kekurangan yang dimiliki oleh HTML.
+          Selanjanjutnya apa sih yang ada di dalam HTML itu?
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Isi dari HTML</h2>
+        <p>
+          Isi yang ada di HTML disebut dengan tag seperti contoh
+          <span class="badge bg-secondary">&lt;p&gt;&lt;/p&gt;</span>. Ada
+          beberapa tag yang dimiliki oleh HTML, contohnya:
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 bg-dark border-warning">
+              <div class="card-body">
+                <h5
+                  class="card-title text-warning border-bottom border-warning pb-2 mb-3"
+                >
+                  Header
+                </h5>
+                <p class="card-text text-light">
+                  Header adalah tag yang digunakan untuk menampilkan judul atau
+                  kepala dari sebuah halaman. Tag header biasanya ditulis dengan
+                  <span class="badge bg-secondary"
+                    >&lt;header&gt;&lt;/header&gt;</span
+                  >. Isi dari tag header biasanya ada tag
+                  <span class="badge bg-secondary">&lt;title&gt;</span> untuk
+                  menampilkan judul dari halaman
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 bg-dark border-warning">
+              <div class="card-body">
+                <h5
+                  class="card-title text-warning border-bottom border-warning pb-2 mb-3"
+                >
+                  Body
+                </h5>
+                <p class="card-text text-light">
+                  Selanjutnya ada tag body yang dinyatakan dengan
+                  <span class="badge bg-secondary"
+                    >&lt;body&gt;&lt;/body&gt;</span
+                  >. Tag body merupakan tubuh atau isi dari dokumen HTML. Nah di
+                  tag body tuh kita bisa berkreasi kaya pake tag
+                  <span class="badge bg-secondary">&lt;h1&gt;&lt;/h1&gt;</span>
+                  yang digunakan untuk membuat heading dari halaman web atau tag
+                  <span class="badge bg-secondary">&lt;p&gt;&lt;/p&gt;</span>
+                  untuk membuat paragraf di halaman web. lalu ada tag
+                  <span class="badge bg-secondary">&lt;img&gt;</span> untuk
+                  menyisipkan gambar ke halaman web, dan masih banyak lagi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 bg-dark border-warning">
+              <div class="card-body">
+                <h5
+                  class="card-title text-warning border-bottom border-warning pb-2 mb-3"
+                >
+                  Atribut
+                </h5>
+                <p class="card-text text-light">
+                  Yang Terakhir adalah atribut dimana tag awal bisa memiliki
+                  beberapa atribut untuk menyatakan karakteristik dari tag itu
+                  sendiri. Contohnya,
+                  <span class="badge bg-secondary"
+                    >&lt;p style="text-align: left&gt;&lt;/p&gt;</span
+                  >
+                  digunakan untuk membuat teks rata kiri di satu paragraf. Tag
+                  nya adalah
+                  <span class="badge bg-secondary">&lt;p&gt;</span> dan
+                  atributnya ada "style" dengan nilai "text-align: left".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CSS Section -->
+      <section id="css" class="mb-5 pt-5">
+        <h2 class="border-bottom border-warning pb-2 mb-3 display-4">
+          Apa itu CSS?
+        </h2>
+        <p class="lead">
+          CSS atau Cascading Style Sheets adalah bahasa pemrograman yang
+          digunakan untuk membuat tamplilan, mengatur tata letak, warna dan font
+          dari website kita. CSS dibuat dan dikembangkan oleh W3C atau World
+          Wide Web Consortium pada tahun 1996 dan versi terbarunya adalah CSS
+          2.1 yang diluncurkan pada tahun 2016. Kenapa sih kita harus pake CSS
+          brok?
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Kegunaan CSS</h2>
+        <p>
+          CSS digunakan supaya tampilan website kita jadi lebih menarik tidak
+          statis saja. Misalnya kalau hanya pake HTML tuh cuman tulisan doang
+          nah dengan menggunakan CSS kita bisa mengubah warna background-nya,
+          lalu bisa mengubah font dari paragraf yang kita tulis di HTML, lalu
+          bisa mengubah warna dari font HTML, dan lain sebagainya. Jadi kalau
+          kita analogikan biar lebih mudah, CSS itu bisa dibilang kulit manusia.
+          Lalu gimana sih cara pake CSS?
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">
+          Cara Menggunakan CSS
+        </h2>
+        <p>
+          Cara menggunakan CSS ada 3 macam, yaitu dengan cara CSS inline, CSS
+          Eksternal, dan CSS Internal. Gimana sih cara penulisannya brok?
+        </p>
+
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card bg-dark border-warning">
+              <div class="card-header border-warning">
+                <h3 class="text-warning mb-0">CSS Inline</h3>
+              </div>
+              <div class="card-body text-light">
+                <h5 class="card-title">Yang pertama ada CSS inline.</h5>
+                <p>
+                  Apa sih CSS Inline itu brok? CSS Inline adalah kode CSS yang
+                  ditempatkan di dalam tag HTML contohnya
+                  <span class="badge bg-secondary"
+                    >&lt;h1 style="color:blue;text-align:center;"&gt;Heading
+                    1&lt;/h1&gt;</span
+                  >
+                  dari kode itu bisa kita dapatkan bahwa tag h1 itu ada sebuah
+                  atribut yang namanya style untuk mengubah warna dan membuat
+                  textnya berada di tengah. Tapi ada kelebihan dan kekurangan ga
+                  sih brok kalo pake CSS Inline? Tentu ada dong brok berikut
+                  kelebihan dan kekurangannya nih brok.
+                </p>
+
+                <h6 class="mt-3">Kelebihan</h6>
+                <ul class="list-group list-group-flush bord">
+                  <li class="list-group-item bg-dark text-light">
+                    Gampang dan cepet buat diterapin ke satu elemen doang
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Mantep buat testing atau debugging style tertentu
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Gak perlu ribet nyari-nyari file CSS lain buat ngubah style
+                  </li>
+                </ul>
+
+                <h6 class="mt-3">Kekurangan</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-light">
+                    Ribet banget kalo websitenya gede brok, karena setiap tag
+                    harus ada atribut style
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Gak efisien, soalnya lu mesti nulis style yang sama
+                    berulang-ulang
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    HTML jadi kecampur sama style, berantakan jadinya
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card bg-dark border-warning">
+              <div class="card-header border-warning">
+                <h3 class="text-warning mb-0">CSS Eksternal</h3>
+              </div>
+              <div class="card-body text-light">
+                Selanjutnya ada CSS Eksternal. Apa lagi itu brok CSS Eksternal?
+                CSS Eksternal adalah CSS yang dibuat diluar kode HTML dan kita
+                memanggilnya ke dalam kode HTML supaya HTML kita bisa nyambung
+                ke CSS kita. Cara menggunakannya di tag header kita menggunakan
+                tag style untuk memanggil CSS. Contoh
+                <div class="bg-secondary p-3 rounded my-3">
+                  <pre class="mb-0"><code>&lt;header&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/header&gt;</code></pre>
+                </div>
+                <p>
+                  Dari kode diatas "link" adalah sebuah tag untuk memanggil file
+                  dari CSS nya brok, lalu style.css adalah nama filenya nah
+                  didalam file tersebut kita bisa mendekorasi halaman HMTL kita
+                  seperti yang kita inginkan contoh penulisan di dalam file CSS
+                  nya gini brok
+                </p>
+                <div class="bg-secondary p-3 rounded">
+                  <pre class="mb-0"><code>body {
+  background-color: #f2f2f2;
+}
+h1 {
+  color: red;
+  margin-left: 20px
+}</code></pre>
+                </div>
+                <p>
+                  Nah kan sudah kita bahas cara menggunakannya tapi ada
+                  kelebihan dan kekurangannya ga sih brok? Tentu saja ada brok,
+                  berikut kelebihan dan kekurangan dari CSS Eksternal.
+                </p>
+                <h6 class="mt-3">Kelebihan</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-light">
+                    Rapi dan terorganisir. Semua style ditaruh di satu file,
+                    jadi gak berantakan brok
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Mudah dikelola. Kalo mau ganti style, tinggal edit satu file
+                    doang. Gak ribet
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Reuse style. Bisa dipake di banyak halaman sekaligus. Hemat
+                    waktu, brok
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Loading lebih cepat. Browser bisa cache file CSS-nya, jadi
+                    halaman-halaman berikutnya loading lebih cepat
+                  </li>
+                </ul>
+
+                <h6 class="mt-3">Kekurangan</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-light">
+                    Butuh waktu loading awal. Kalo file CSS-nya besar, bisa
+                    bikin loading awal jadi lebih lambat
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Gak bisa testing instan. Kalo mau lihat perubahan style,
+                    harus refresh halaman
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Bergantung pada file. Kalo file CSS-nya hilang atau error,
+                    semua style bisa berantakan
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Keterbatasan akses. Kalo ada yang mau edit style, harus
+                    punya akses ke file CSS-nya
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card bg-dark border-warning">
+              <div class="card-header border-warning">
+                <h3 class="text-warning mb-0">CSS Internal</h3>
+              </div>
+              <div class="card-body text-light">
+                Yang terakhir adalah CSS Internal atau sering disebut Embedded
+                nih brok. Apaan tuh CSS Internal brok? CSS Internal tuh bisa
+                dibilang sama seperti CSS Inline brok nah tapi dia tidak di
+                tulis di baris yang sama, namun dia ditulis di tag head dan cara
+                penulisannya menggunakan tag style. Contohnya
+                <div class="bg-secondary p-3 rounded mt-3">
+                  <pre class="mb-0"><code>&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: #f2f2f2;
+}
+h1 {
+  color: red;
+  margin-left: 20px
+}
+&lt;/style&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+                <h6 class="mt-3">Kelebihan</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-light">
+                    Gampang diimplementasi. Cukup taruh di dalam tag
+                    <code>&lt;style&gt;</code> di bagian
+                    <code>&lt;head&gt;</code> HTML, beres
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Cocok buat proyek kecil. Kalo website-nya gak terlalu besar,
+                    CSS Internal bisa jadi pilihan yang oke brok
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Gak perlu file terpisah. Semua style ada di satu tempat,
+                    jadi gampang dicari
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Bisa override style dari CSS eksternal. Kalo mau ganti style
+                    tertentu, tinggal tulis di sini
+                  </li>
+                </ul>
+
+                <h6 class="mt-3">Kekurangan</h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark text-light">
+                    Gak efisien untuk website besar. Kalo banyak halaman, harus
+                    nulis style di setiap halaman, ribet
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Bisa bikin HTML jadi berantakan. Kode CSS campur sama HTML,
+                    jadi kurang rapi
+                  </li>
+                  <li class="list-group-item bg-dark text-light">
+                    Keterbatasan performa. Kalo banyak style, bisa bikin loading
+                    halaman jadi lebih lambat
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JavaScript Section -->
+      <section id="js" class="mb-5 pt-5">
+        <h2 class="border-bottom border-warning pb-2 mb-3 display-4">
+          Apa Itu JavaScript (JS)?
+        </h2>
+        <p class="lead">
+          JavaScript adalah bahasa pemrograman yang digunakan untuk membuat
+          halaman web menjadi interaktif. Dengan JS, Anda dapat menangani event,
+          memanipulasi DOM, dan bahkan mengakses API eksternal untuk memperkaya
+          pengalaman pengguna.
+        </p>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
