@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Penjelasan tentang HTML, CSS, dan JavaScript untuk web development"
+    />
+    <title>Pengertian HTML</title>
+    <link
+      href="../vendor/bootstrap-5.3.3-dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <style>
+      .nav-link {
+          position: relative;
+          text-decoration: none;
+          color: #ffc107;
+      }
+      .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          height: 2px;
+          background: white;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+      }
+      .nav-link.active::after, .nav-link:hover::after {
+          transform: scaleX(1);
+      }
+      .content-box {
+          border: 1px solid #007bff;
+          border-radius: 5px;
+          padding: 20px;
+          margin-bottom: 20px;
+      }
+      .content-box img {
+          max-width: 100%;
+          height: auto;
+      }
+      .text-center {
+          text-align: center;
+      }
+  </style>
+  </head>
+  <body class="bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <span class="text-warning">DeruDJ</span>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-semibold active" href="#">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-semibold" href="css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-semibold" href="js.html">JS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container py-5">
+      <section id="html" class="mb-5">
+        <h1 class="border-bottom border-warning pb-3 mb-4 display-4">
+          Apa Itu HTML?
+        </h1>
+        <p class="lead">
+          Pertama-tama kita harus tahu apa itu HTML, HTML adalah sebuah bahasa
+          markup yang biasanya digunakan untuk membuat sebuah halaman web. Nah,
+          siapa sih penciptanya? Penciptanya adalah Tim Barners Lee pada tahun
+          1991. Untuk saat ini versi terbarunya yaitu versi HTML5 yang dirilis
+          tahun 2014. HTML adalah kependekan dari Hypertext Markup Language. Nah
+          dari kata Markup berarti HTML bukanlah bahasa pemrograman. Jadi, clear
+          ya yang bilang bahwa HTML itu bahasa pemrograman berarti mereka salah
+          ya brok. Kalau kita analogikan dalam tubuh manusia, HTML bisa kita analogikan sebagai kerangka atau tulang dari manusia. Kenapa sih kita pakai HTML?
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Kelebihan HTML</h2>
+        <p>Kelebihan yang kita dapatkan saat menggunakan HTML antara lain:</p>
+        <ul class="list-group mb-4">
+          <li class="list-group-item bg-dark text-light border-warning">
+            Bersifat Open Source sehingga gratis untuk digunakan
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Mudah disambungkan dengan bahasa lain contohnya JavaScript dan PHP
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Bisa dijalankan oleh hampir semua browser
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Mudah dipelajari oleh web developer pemula
+          </li>
+        </ul>
+
+        <p>
+          Nah diatas itu adalah kelebihan dari HTML, tetapi bukan berarti tidak
+          ada kekurangan nya ya brok.
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Kekurangan HTML</h2>
+        <p>
+          Sebelumnya kita sudah membahas kelebihannya nih, nah sekarang kita
+          bahas kekurangannya ya. Apa aja sih kekurangannya:
+        </p>
+        <ul class="list-group mb-4">
+          <li class="list-group-item bg-dark text-light border-warning">
+            Hanya diimplementasikan pada web statis
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Tidak bisa menjalankan logika seperti pertambahan, pengurangan, dan
+            sebagainya
+          </li>
+          <li class="list-group-item bg-dark text-light border-warning">
+            Tidak bisa terhubung dengan database
+          </li>
+        </ul>
+
+        <p>
+          Nah itulah kelebihan dan kekurangan yang dimiliki oleh HTML.
+          Selanjanjutnya apa sih yang ada di dalam HTML itu?
+        </p>
+
+        <h2 class="border-bottom border-warning pb-2 mb-3">Isi dari HTML</h2>
+        <p>
+          Isi yang ada di HTML disebut dengan tag seperti contoh
+          <span class="badge bg-secondary">&lt;p&gt;&lt;/p&gt;</span>. Ada
+          beberapa tag yang dimiliki oleh HTML, contohnya:
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 bg-dark border-warning">
+              <div class="card-body">
+                <h5
+                  class="card-title text-warning border-bottom border-warning pb-2 mb-3"
+                >
+                  Header
+                </h5>
+                <p class="card-text text-light">
+                  Header adalah tag yang digunakan untuk menampilkan judul atau
+                  kepala dari sebuah halaman. Tag header biasanya ditulis dengan
+                  <span class="badge bg-secondary"
+                    >&lt;header&gt;&lt;/header&gt;</span
+                  >. Isi dari tag header biasanya ada tag
+                  <span class="badge bg-secondary">&lt;title&gt;</span> untuk
+                  menampilkan judul dari halaman
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 bg-dark border-warning">
+              <div class="card-body">
+                <h5
+                  class="card-title text-warning border-bottom border-warning pb-2 mb-3"
+                >
+                  Body
+                </h5>
+                <p class="card-text text-light">
+                  Selanjutnya ada tag body yang dinyatakan dengan
+                  <span class="badge bg-secondary"
+                    >&lt;body&gt;&lt;/body&gt;</span
+                  >. Tag body merupakan tubuh atau isi dari dokumen HTML. Nah di
+                  tag body tuh kita bisa berkreasi kaya pake tag
+                  <span class="badge bg-secondary">&lt;h1&gt;&lt;/h1&gt;</span>
+                  yang digunakan untuk membuat heading dari halaman web atau tag
+                  <span class="badge bg-secondary">&lt;p&gt;&lt;/p&gt;</span>
+                  untuk membuat paragraf di halaman web. lalu ada tag
+                  <span class="badge bg-secondary">&lt;img&gt;</span> untuk
+                  menyisipkan gambar ke halaman web, dan masih banyak lagi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 bg-dark border-warning">
+              <div class="card-body">
+                <h5
+                  class="card-title text-warning border-bottom border-warning pb-2 mb-3"
+                >
+                  Atribut
+                </h5>
+                <p class="card-text text-light">
+                  Yang Terakhir adalah atribut dimana tag awal bisa memiliki
+                  beberapa atribut untuk menyatakan karakteristik dari tag itu
+                  sendiri. Contohnya,
+                  <span class="badge bg-secondary"
+                    >&lt;p style="text-align: left&gt;&lt;/p&gt;</span
+                  >
+                  digunakan untuk membuat teks rata kiri di satu paragraf. Tag
+                  nya adalah
+                  <span class="badge bg-secondary">&lt;p&gt;</span> dan
+                  atributnya ada "style" dengan nilai "text-align: left".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../vendor/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  </body>
+</html>
